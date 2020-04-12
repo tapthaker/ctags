@@ -336,6 +336,7 @@ def anon_normalize_sub(internal, ctags, input_actual, *args):
     # TODO: "Units" should not be hardcoded.
     input_expected = './Units' + re.sub(r'^.*?/Units', r'', input_actual, 1)
 
+    print("Command: {}".format(' '.join([CTAGS, '--quiet', '--options=NONE', '--_anonhash=' + input_actual])))
     ret = subprocess.run([CTAGS, '--quiet', '--options=NONE', '--_anonhash=' + input_actual],
             stdout=subprocess.PIPE)
     actual = ret.stdout.decode('utf-8').splitlines()[0]

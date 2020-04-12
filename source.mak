@@ -274,6 +274,7 @@ PARSER_SRCS =				\
 	parsers/slang.c			\
 	parsers/sml.c			\
 	parsers/sql.c			\
+	parsers/swift.c			\
 	parsers/systemdunit.c		\
 	parsers/tcl.c			\
 	parsers/tcloo.c			\

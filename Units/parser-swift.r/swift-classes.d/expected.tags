@@ -1,0 +1,25 @@
+InnerClass	input.swift	/^  class InnerClass {$/;"	c	class:MyClass
+MyClass	input.swift	/^class MyClass {$/;"	c
+Structure	input.swift	/^struct Structure {$/;"	s
+deinit	input.swift	/^  deinit {$/;"	m	class:InnerClass
+functionInsideStructurefunctionParameter:	input.swift	/^  func functionInsideStructure(functionParameter: (String, String) -> Int) -> Structure {$/;"	m	struct:Structure
+independentFunctionvar1:var2:	input.swift	/^func independentFunction(var1: String, var2: String) -> String {$/;"	m
+init	input.swift	/^  init() {$/;"	m	class:MyClass
+initval:noop1:nooop2:	input.swift	/^  init(val: String, noop1: String, nooop2: Int) {$/;"	m	class:MyClass
+innerClassFunctionvar1:var2:	input.swift	/^      func innerClassFunction(var1: String, var2: String) {$/;"	m	class:InnerClass
+instanceMethod	input.swift	/^  func instanceMethod() -> Void {$/;"	m	class:MyClass
+instanceMethodWithComplexArgsParam1:Param2:String:	input.swift	/^  func instanceMethodWithComplexArgs(Param1: (String) -> Void, Param2: [String: Int]) {$/;"	m	class:MyClass
+instanceMethodWithNoReturnsArrow	input.swift	/^  func instanceMethodWithNoReturnsArrow() {$/;"	m	class:MyClass
+instanceMethodWithParam1:Param2:	input.swift	/^  func instanceMethodWith(Param1: String, Param2: Int) -> Void {$/;"	m	class:MyClass
+privateSetProperty	input.swift	/^  public private(set) var privateSetProperty : String {$/;"	p	class:MyClass
+propertyComputed	input.swift	/^  var propertyComputed: String {$/;"	p	class:MyClass
+propertyConstant	input.swift	/^  let propertyConstant: String$/;"	p	class:MyClass
+propertyInsideStructure	input.swift	/^  let propertyInsideStructure: String$/;"	p	struct:Structure
+propertyOfTypeClosure	input.swift	/^  let propertyOfTypeClosure : () -> Void = {$/;"	p	class:MyClass
+propertyWithOnlyAssignment	input.swift	/^  var propertyWithOnlyAssignment = "world"$/;"	p	class:MyClass
+propertyWithTypeAndAssignment	input.swift	/^  var propertyWithTypeAndAssignment: String = "Hello"$/;"	p	class:MyClass
+staticFunctionInsideStructure	input.swift	/^  static func staticFunctionInsideStructure() -> Void {$/;"	m	struct:Structure
+staticMethod	input.swift	/^  class func staticMethod() -> Void {$/;"	S	class:MyClass
+staticMethodWithComplexArgsParam1:Param2:String:	input.swift	/^  class func staticMethodWithComplexArgs(Param1: (String) -> Void, Param2: [String: Int]) {$/;"	S	class:MyClass
+staticMethodWithNoReturnsArrow	input.swift	/^  class func staticMethodWithNoReturnsArrow() {$/;"	S	class:MyClass
+staticMethodWithParam1:Param2:	input.swift	/^  class func staticMethodWith(Param1: String, Param2: Int) -> Void {$/;"	S	class:MyClass
